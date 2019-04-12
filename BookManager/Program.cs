@@ -39,6 +39,8 @@ namespace BookManager
                 Console.WriteLine($"Titulo: {title} ({title.Length})");
                 //Console.WriteLine($"Autor: {author}");
             }
+
+            Console.WriteLine($"no books = {Book.GetBookCount()}");
         }
     }
 }

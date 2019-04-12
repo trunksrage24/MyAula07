@@ -10,6 +10,7 @@ namespace BookManager
         private string author;
         private int pages;
         private int wordCount;
+        private static int bookCount;
 
         public Book(string title , string author)
         {
@@ -36,9 +37,16 @@ namespace BookManager
         {
             return title.Length;
         }
+        public static int GetBookCount() => bookCount;
 
-
-
-
+       public static Book()
+        {
+            bookCount = 0;
+        }
+        public Book(static title, static author)
+        {
+            this.title = title;
+            this.author = author;
+            bookCount++;
     }
 }
